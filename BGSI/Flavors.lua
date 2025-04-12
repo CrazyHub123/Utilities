@@ -1,17 +1,4 @@
 local v1 = game:GetService("ReplicatedStorage")
-local function v7(p3)
-	-- upvalues: (copy) v_u_2
-	local v4 = v_u_2.string
-	local v5 = p3.ID
-	assert(v4(v5))
-	local v6 = Instance.new("Texture")
-	v6.Texture = p3.ID
-	v6.StudsPerTileU = p3.Scale or 1
-	v6.StudsPerTileV = p3.Scale or 1
-	v6.Transparency = p3.Transparency or 0
-	v6.Color3 = p3.Color or Color3.new(1, 1, 1)
-	return v6
-end
 local v8 = {}
 v8["VIP Flavor"] = v9
 local v10 = {
@@ -59,11 +46,7 @@ local v13 = {
 		["Currency"] = "Coins",
 		["Amount"] = 1500
 	},
-	["Color"] = Color3.fromRGB(180, 106, 255),
-	["Texture"] = v7({
-		["ID"] = "rbxassetid://89128567391740",
-		["Scale"] = 3
-	})
+	["Color"] = Color3.fromRGB(180, 106, 255)
 }
 v8.Pizza = v13
 local v14 = {
@@ -99,11 +82,7 @@ local v16 = {
 		["Currency"] = "Coins",
 		["Amount"] = 35000
 	},
-	["Color"] = Color3.new(1, 1, 1),
-	["Texture"] = v7({
-		["ID"] = "rbxassetid://119942239841192",
-		["Scale"] = 3
-	})
+	["Color"] = Color3.new(1, 1, 1)
 }
 v8.Contrast = v16
 local v17 = {
@@ -139,11 +118,7 @@ local v19 = {
 		["Currency"] = "Coins",
 		["Amount"] = 1500000
 	},
-	["Color"] = Color3.fromRGB(255, 147, 246),
-	["Texture"] = v7({
-		["ID"] = "rbxassetid://109378738043919",
-		["Scale"] = 2
-	})
+	["Color"] = Color3.fromRGB(255, 147, 246)
 }
 v8.Donut = v19
 local v20 = {
@@ -155,11 +130,7 @@ local v20 = {
 		["Currency"] = "Coins",
 		["Amount"] = 30000000
 	},
-	["Color"] = Color3.new(1, 1, 1),
-	["Texture"] = v7({
-		["ID"] = "rbxassetid://114500364224740",
-		["Scale"] = 2
-	})
+	["Color"] = Color3.new(1, 1, 1)
 }
 v8.Swirl = v20
 local v29 = {
@@ -184,11 +155,7 @@ local v29 = {
 		table.insert(v22, v27(1, v28))
 		return ColorSequence.new(v22)
 	end)({ Color3.fromRGB(197, 111, 25), Color3.fromRGB(255, 177, 20) }),
-	["Material"] = Enum.Material.Neon,
-	["Texture"] = v7({
-		["ID"] = "rbxassetid://17321826076",
-		["Scale"] = 2
-	})
+	["Material"] = Enum.Material.Neon
 }
 v8.Molten = v29
 return v8
