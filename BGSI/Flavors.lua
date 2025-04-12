@@ -1,6 +1,4 @@
 local v1 = game:GetService("ReplicatedStorage")
-local v_u_2 = require(v1.Shared.Framework.T)
-require(v1.Shared.Types)
 local function v7(p3)
 	-- upvalues: (copy) v_u_2
 	local v4 = v_u_2.string
@@ -15,16 +13,6 @@ local function v7(p3)
 	return v6
 end
 local v8 = {}
-local v9 = {
-	["Bubbles"] = 35,
-	["Image"] = "rbxassetid://95844804699402",
-	["Cost"] = require(v1.Shared.Data.Gamepasses).VIP.Id,
-	["Color"] = Color3.fromRGB(67, 180, 255),
-	["Texture"] = v7({
-		["ID"] = "rbxassetid://80383870163327",
-		["Scale"] = 2
-	})
-}
 v8["VIP Flavor"] = v9
 local v10 = {
 	["Bubbles"] = 1,
