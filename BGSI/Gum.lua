@@ -1,20 +1,5 @@
 local v1 = game:GetService("ReplicatedStorage")
-require(v1.Shared.Types)
-local v2 = require(v1.Shared.Data.Gamepasses)
-local v3 = {
-	["Infinity Gum"] = {
-		["Storage"] = 10000000000,
-		["Area"] = "The Overworld",
-		["Image"] = "rbxassetid://139014838916703",
-		["Cost"] = v2["Infinity Gum"].Id
-	},
-	["VIP Gum"] = {
-		["Storage"] = 550,
-		["Area"] = "The Overworld",
-		["Image"] = "rbxassetid://125218223091015",
-		["Cost"] = v2.VIP.Id
-	}
-}
+local v3 = {}
 local v4 = {
 	["Storage"] = 10,
 	["Area"] = "The Overworld",
